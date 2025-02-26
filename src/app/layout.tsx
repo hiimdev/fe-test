@@ -63,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         suppressHydrationWarning
         className={clsx(
-          'bg-background font-outfit min-h-screen antialiased',
+          'font-outfit min-h-screen bg-[#03193A] antialiased',
           fontPoppins.variable,
           fontSans.variable,
           fontOutfit.className

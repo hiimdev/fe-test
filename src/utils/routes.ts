@@ -1,9 +1,11 @@
 export const ROUTES = {
   HOME: '/',
-  PRODUCTS: '/products',
-  SERVICES: '/green-services',
-  ABOUT: '/about',
-  CONTACT: '/contact',
-  TERMS: '/terms',
-  PRIVACY: '/privacy-policy',
+  PRODUCTS: '/',
+  SERVICES: '/',
+  ABOUT: '/',
+  CONTACT: '/',
+  TERMS: '/',
+  PRIVACY: '/',
+  PROMOTIONS: '/',
+  VIP: '/',
 } as const;
