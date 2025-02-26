@@ -4,7 +4,7 @@ import { type Metadata, type Viewport } from 'next';
 // import { env } from '@/utils/const';
 import clsx from 'clsx';
 
-import { fontPoppins, fontSans } from '@/config/fonts';
+import { fontOutfit, fontPoppins, fontSans } from '@/config/fonts';
 import { siteConfig } from '@/config/site';
 import MainLayout from '@/components/layouts/MainLayout';
 
@@ -62,7 +62,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
       <body
         suppressHydrationWarning
-        className={clsx('bg-background font-poppins min-h-screen antialiased', fontPoppins.variable, fontSans.variable)}
+        className={clsx(
+          'bg-background font-outfit min-h-screen antialiased',
+          fontPoppins.variable,
+          fontSans.variable,
+          fontOutfit.className
+        )}
       >
         <Providers themeProps={{ attribute: 'class', forcedTheme: 'light' }}>
           <MainLayout>{children} </MainLayout>

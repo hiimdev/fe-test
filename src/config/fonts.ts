@@ -1,4 +1,4 @@
-import { Inter as FontSans, Poppins } from 'next/font/google';
+import { Inter as FontSans, Outfit, Poppins } from 'next/font/google';
 
 export const fontSans = FontSans({
   subsets: ['latin'],
@@ -9,5 +9,11 @@ export const fontSans = FontSans({
 export const fontPoppins = Poppins({
   weight: ['200', '300', '400', '500', '600', '700', '800'],
   variable: '--font-poppins',
+  subsets: ['latin'],
+});
+
+export const fontOutfit = Outfit({
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
+  variable: '--font-outfit',
   subsets: ['latin'],
 });
