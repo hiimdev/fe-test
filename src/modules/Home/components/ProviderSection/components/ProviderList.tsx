@@ -18,7 +18,7 @@ const providers = [
   {
     title: 'VeliPlay',
     desc: '9 games',
-    imageSrc: '/images/veliPlay.png',
+    imageSrc: '/images/veliplay2.png',
   },
   {
     title: 'Turbo Games',
