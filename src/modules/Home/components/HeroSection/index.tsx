@@ -6,7 +6,7 @@ import CarouselList from './components/CarouselList';
 
 const HeroSection = () => {
   return (
-    <section className="relative">
+    <section className="relative pb-4">
       <Carousel opts={{ loop: true }}>
         <CarouselList />
       </Carousel>
