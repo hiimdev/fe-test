@@ -1,6 +1,5 @@
 import React, { type FC } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { Icons } from '@/assets/icons';
 import { useMenuMobileStore } from '@/stores';
 import { ROUTES } from '@/utils/routes';
@@ -44,13 +43,11 @@ interface INavbarDesktopProps {
   isTransparent?: boolean;
 }
 
-const NavbarDesktop: FC<INavbarDesktopProps> = ({ isTransparent }) => {
-  const pathname = usePathname();
-
+const NavbarDesktop = () => {
   return (
     <nav className="group hidden flex-1 items-center space-x-2 lg:flex">
       {navList?.map((item, index) => {
-        const isActive = item?.href === pathname;
+        // const isActive = item?.href === pathname;
 
         return (
           <Link
