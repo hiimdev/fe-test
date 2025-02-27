@@ -9,6 +9,7 @@ import { useCommonCarousel } from '@/hooks/useCommonCarousel';
 import { Button } from '@/components/ui/button';
 import { CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import { HStack } from '@/components/ui/h-stack';
+import { Tooltip } from '@/components/ui/tooltip';
 import { VStack } from '@/components/ui/v-stack';
 
 const heroData = [
@@ -66,9 +67,12 @@ const CarouselList = () => {
                 item.bgColor
               )}
             >
-              <span className="absolute right-4 top-4">
-                <Icons.circleInfo />{' '}
-              </span>
+              <Tooltip variant="light" label={item.desc}>
+                <span className="absolute right-4 top-4 z-10 cursor-pointer">
+                  <Icons.circleInfo />
+                </span>
+              </Tooltip>
+
               <VStack className="mb-12 w-full flex-1 gap-2 md:mb-0 md:gap-[1rem]" justify="center" align="center">
                 <p className="max-w-fit rounded-full bg-white/10 px-4 py-[.3125rem] text-center text-[.75rem] font-semibold md:text-[1.3125rem]">
                   {item.desc}
@@ -78,7 +82,7 @@ const CarouselList = () => {
                   {item.title}
                 </p>
 
-                <Button className="min-h-[50px] bg-[#FF0960] px-[57.72px] py-[16.8px] text-[1.3125rem] font-semibold uppercase lg:px-[5.4644rem]">
+                <Button className="min-h-[50px] bg-[#FF0960] px-[57.72px] py-[16.8px] text-[1.3125rem] font-semibold uppercase transition-all duration-300 hover:scale-110 lg:px-[5.4644rem]">
                   {item.btnContent}
                 </Button>
               </VStack>

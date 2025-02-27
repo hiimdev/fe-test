@@ -18,7 +18,7 @@ const CategoryItem = ({ icon, title, imageSrc }: Props) => {
       spacing={12}
       align="center"
       className={cn(
-        'max-w-fit cursor-pointer rounded-[10px] border border-white/10 px-[17px] py-4 hover:opacity-70 md:min-w-[197.14px] md:px-[20px]',
+        'max-w-fit cursor-pointer rounded-[10px] border border-white/10 px-[17px] py-4 transition-all duration-300 hover:scale-90 hover:opacity-70 md:min-w-[197.14px] md:px-[20px]',
         !!icon && 'bg-[#12294A]'
       )}
     >

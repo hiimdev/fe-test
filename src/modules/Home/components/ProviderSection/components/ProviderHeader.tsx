@@ -3,10 +3,10 @@ import { Icons } from '@/assets/icons';
 
 import { HStack } from '@/components/ui/h-stack';
 
-const GameHeader = () => {
+const ProviderHeader = () => {
   return (
     <HStack pos="apart">
-      <p className="text-sm font-medium md:text-[32px]">Exclusive Games</p>
+      <p className="text-sm font-medium md:text-[32px]">All Providers</p>
 
       <HStack spacing={12} align="center" className="cursor-pointer hover:opacity-70">
         <p className="hidden text-[15px] uppercase md:block">See All</p>
@@ -17,4 +17,4 @@ const GameHeader = () => {
   );
 };
 
-export default GameHeader;
+export default ProviderHeader;

@@ -7,6 +7,7 @@ import { VStack } from '@/components/ui/v-stack';
 import Categories from './components/Categories';
 import GamesSection from './components/GamesSection';
 import HeroSection from './components/HeroSection';
+import ProviderSection from './components/ProviderSection';
 
 const HomePage = () => {
   return (
@@ -16,6 +17,8 @@ const HomePage = () => {
       <Categories />
 
       <GamesSection />
+
+      <ProviderSection />
     </VStack>
   );
 };

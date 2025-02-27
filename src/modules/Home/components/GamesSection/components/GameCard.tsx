@@ -9,8 +9,8 @@ type Props = {
 
 const GameCard = ({ title, icon, imageSrc }: Props) => {
   return (
-    <div className="relative h-[210.6px] w-[156px] cursor-pointer overflow-hidden rounded-[8px] transition-all duration-300 hover:scale-110 hover:opacity-70">
-      <Image src={imageSrc} alt="game-card" fill className="object-contain" />
+    <div className="relative h-[210.6px] w-[156px] cursor-pointer rounded-[8px] transition-all duration-300 hover:scale-110 hover:opacity-70">
+      <Image src={imageSrc} alt="game-card" fill className="rounded-[8px] object-contain" />
 
       {icon && (
         <Image src={icon} alt="icon-card" width={36} height={21} className="absolute -left-1 top-4 object-contain" />

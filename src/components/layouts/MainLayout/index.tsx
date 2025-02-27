@@ -4,6 +4,7 @@ import React from 'react';
 import { AppContextProvider } from '@/context/app.context';
 import { type FCC } from '@/types';
 
+import { TooltipProvider } from '@/components/ui/tooltip';
 import BackToTopButton from '@/components/BackToTopButton';
 import MobileMenu from '@/components/MobileMenu';
 
@@ -15,7 +16,9 @@ const MainLayout: FCC = ({ children }) => {
     <AppContextProvider value={{}}>
       <Header />
       <main>
-        <div>{children}</div>
+        <TooltipProvider>
+          <div>{children}</div>
+        </TooltipProvider>
       </main>
       <Footer />
       <MobileMenu />
