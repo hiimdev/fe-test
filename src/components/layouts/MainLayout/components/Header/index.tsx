@@ -30,7 +30,7 @@ const Header: React.FC = () => {
         </HStack>
 
         <HStack className="hidden flex-1 lg:flex">
-          <span className="cursor-pointer duration-300 hover:scale-90 hover:opacity-70">
+          <span className="cursor-pointer duration-300 hover:opacity-70 md:hover:scale-90">
             <Icons.search />
           </span>
 
@@ -38,9 +38,11 @@ const Header: React.FC = () => {
         </HStack>
 
         <HStack className="gap-2 md:gap-3">
-          <Button className="transition-all duration-300 hover:scale-110">LOGIN</Button>
+          <Button className="transition-all duration-300 md:hover:scale-110">LOGIN</Button>
 
-          <Button className="bg-[#01AF70] uppercase transition-all duration-300 hover:scale-110">Registration</Button>
+          <Button className="bg-[#01AF70] uppercase transition-all duration-300 md:hover:scale-110">
+            Registration
+          </Button>
         </HStack>
       </HStack>
     </motion.header>

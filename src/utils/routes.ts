@@ -1,9 +1,8 @@
 export const ROUTES = {
   HOME: '/',
-  PRODUCTS: '/',
-  SERVICES: '/',
-  ABOUT: '/',
-  CONTACT: '/',
+  GAME: '/',
+  INFOR: '/',
+  NEWS: '/',
   TERMS: '/',
   PRIVACY: '/',
   PROMOTIONS: '/',

@@ -82,7 +82,7 @@ const CarouselList = () => {
                   {item.title}
                 </p>
 
-                <Button className="min-h-[50px] bg-[#FF0960] px-[57.72px] py-[16.8px] text-[1.3125rem] font-semibold uppercase transition-all duration-300 hover:scale-110 lg:px-[5.4644rem]">
+                <Button className="min-h-[50px] bg-[#FF0960] px-[57.72px] py-[16.8px] text-[1.3125rem] font-semibold uppercase transition-all duration-300 md:hover:scale-110 lg:px-[5.4644rem]">
                   {item.btnContent}
                 </Button>
               </VStack>

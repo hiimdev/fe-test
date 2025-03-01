@@ -8,7 +8,7 @@ import GameList from './components/GameList';
 
 const GamesSection = () => {
   return (
-    <VStack className="container mx-auto gap-[20px] px-4 lg:px-0">
+    <VStack className="container mx-auto px-4 md:gap-[20px] lg:px-0">
       <GameHeader />
 
       <Carousel opts={{ loop: false }}>

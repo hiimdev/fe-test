@@ -12,7 +12,7 @@ type Props = {
 const ProviderCard = ({ title, desc, imageSrc }: Props) => {
   return (
     <VStack
-      className="relative h-auto w-[156px] cursor-pointer space-y-[22px] rounded-[8px] bg-[#12294A] px-4 pb-[76px] pt-4 transition-all duration-300 hover:scale-110 hover:opacity-70 md:px-8"
+      className="relative h-auto w-[156px] cursor-pointer space-y-[22px] rounded-[8px] bg-[#12294A] px-4 pb-[76px] pt-4 transition-all duration-300 hover:opacity-70 md:px-8 md:hover:scale-110"
       justify="center"
       align="center"
     >

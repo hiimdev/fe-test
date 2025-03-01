@@ -15,17 +15,17 @@ const navList = [
   {
     id: 2,
     title: 'GAME',
-    href: ROUTES.PRODUCTS,
+    href: ROUTES.GAME,
   },
   {
     id: 3,
     title: 'INFOR',
-    href: ROUTES.SERVICES,
+    href: ROUTES.INFOR,
   },
   {
     id: 4,
     title: 'NEWS',
-    href: ROUTES.ABOUT,
+    href: ROUTES.NEWS,
   },
   {
     id: 5,
