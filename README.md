@@ -1,5 +1,7 @@
 ![screenshot](./screenshot.png)
 
+![screenshot](./screenshot-mobile.png)
+
 # Installation
 
 ## Prerequisites
