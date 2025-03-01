@@ -60,7 +60,7 @@ const CarouselList = () => {
           <CarouselItem
             key={index}
             className={cn(
-              'max-w-[74.7425rem] basis-[85%] transition-all duration-300 lg:ml-14 lg:skew-x-2',
+              'max-w-[74.7425rem] basis-[85%] transition-all duration-300 lg:ml-14',
               index === selectedIndex ? '' : 'opacity-20'
             )}
           >
