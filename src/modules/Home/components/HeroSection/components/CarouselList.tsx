@@ -18,35 +18,35 @@ const heroData = [
     desc: 'Exclusive Tournament',
     btnContent: 'JOIN AND WIN',
     imgSrc: '/images/hero.png',
-    bgColor: 'bg-gradient-to-br from-[#147261] to-[#082C25]',
+    bgColor: 'bg-gradient-to-b md:bg-gradient-to-br from-[#147261] to-[#082C25]',
   },
   {
     title: 'Win or Get Back up to €100',
     desc: 'Exclusive Tournament',
     btnContent: 'Discover More',
     imgSrc: '/images/hero2.png',
-    bgColor: 'bg-gradient-to-br from-[#ff6b6b] to-[#c81d25]',
+    bgColor: 'bg-gradient-to-b md:bg-gradient-to-br from-[#ff6b6b] to-[#c81d25]',
   },
   {
     title: 'Weekly Jackpot: Up to €50,000',
     desc: 'Join the challenge and grab the prize!',
     btnContent: 'Play Now',
     imgSrc: '/images/hero2.png',
-    bgColor: 'bg-gradient-to-br from-[#FFD700] to-[#FF8C00]',
+    bgColor: 'bg-gradient-to-b md:bg-gradient-to-br from-[#FFD700] to-[#FF8C00]',
   },
   {
     title: 'Spin & Win: Instant Rewards Await!',
     desc: 'Try your luck and win big prizes',
     btnContent: 'Spin Now',
     imgSrc: '/images/hero2.png',
-    bgColor: 'bg-gradient-to-br from-[#1E3A8A] to-[#9333EA]',
+    bgColor: 'bg-gradient-to-b md:bg-gradient-to-br from-[#1E3A8A] to-[#9333EA]',
   },
   {
     title: 'VIP Club: Exclusive Perks & Rewards',
     desc: 'Become a VIP and enjoy premium benefits',
     btnContent: 'Join VIP',
     imgSrc: '/images/hero2.png',
-    bgColor: 'bg-gradient-to-br from-[#B5179E] to-[#7209B7]',
+    bgColor: 'bg-gradient-to-b md:bg-gradient-to-br from-[#B5179E] to-[#7209B7]',
   },
 ];
 
@@ -55,11 +55,14 @@ const CarouselList = () => {
 
   return (
     <>
-      <CarouselContent ref={carouselRef} className="my-[0.9375rem] md:my-5 lg:my-[1.5625rem] lg:ml-14">
+      <CarouselContent ref={carouselRef} className="my-[0.9375rem] md:my-5 lg:my-[1.5625rem]">
         {heroData.map((item, index) => (
           <CarouselItem
             key={index}
-            className={cn('max-w-[74.7425rem] basis-[85%] lg:ml-14 lg:basis-[80%]', index === selectedIndex ? '' : '')}
+            className={cn(
+              'max-w-[74.7425rem] basis-[85%] transition-all duration-300 lg:ml-14 lg:skew-x-2',
+              index === selectedIndex ? '' : 'opacity-20'
+            )}
           >
             <HStack
               className={cn(
