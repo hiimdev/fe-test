@@ -1,3 +1,5 @@
+![screenshot](./screenshot.png)
+
 # Installation
 
 ## Prerequisites
