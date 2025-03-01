@@ -1,6 +1,6 @@
 ![screenshot](./screenshot.png)
 
-![screenshot](./screenshot-mobile.png)
+![screenshot-mobile](./screenshot-mobile.png)
 
 # Installation
 
